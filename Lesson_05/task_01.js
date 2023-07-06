@@ -4,10 +4,8 @@ function makeBuffer() {
 		return value;
 	}
 	buffer.add = function(input) {
-		if (isNaN(input))
-			value += input + " ";
-		else
-			value += input;
+		if (isNaN(input)) value += input + " ";
+		else value += input;
 	}
 	buffer.print = function() {
 		return value;
