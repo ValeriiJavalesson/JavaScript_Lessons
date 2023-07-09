@@ -1,0 +1,64 @@
+@import url(reset.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+header {
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(91, 190, 51);
+}
+
+.header-button {
+    margin: 40px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(2, 0, 129);
+    font-size: 16px;
+    color: white;
+
+}
+
+.header-button:hover {
+    background-color: rgb(73, 103, 238);
+    transition-duration: 100ms;
+}
+
+main {
+    min-height: 300px;
+    font-size: 20px;
+}
+
+.externalRed {
+    background-color: red
+}
+
+
+footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgb(143, 0, 172);
+    color: white;
+    font-size: 28px;
+}
+
+.footer-output {
+    margin: 10px, auto, auto;
+    height: 130px;
+    width: 300px;
+
+}
