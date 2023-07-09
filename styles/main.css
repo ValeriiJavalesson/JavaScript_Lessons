@@ -1,0 +1,68 @@
+@import url(reset.css);
+
+header {
+    display: flex;
+    height: 200px;
+    background-color: rgb(255, 58, 23);
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#headerButton1,
+#headerButton2 {
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: rgb(29, 7, 7);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px rgb(126, 51, 2);
+    border-color: #00000000;
+}
+
+#headerButton2:hover,
+#headerButton1:hover {
+    background-color: rgb(75, 17, 17);
+}
+
+#text {
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(12, 34, 7);
+    text-align: center;
+    opacity: 1;
+    transition-duration: 500ms;
+}
+header ul{
+    width: 300px;
+    margin-top: 20px;
+    color: white;
+    overflow: hidden;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(134, 73, 51, 0.301);
+    transition-duration: 1.5s;
+}
+header ul p{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    
+}
+
+header ul li{
+    padding-left: 20px;
+    height: 30px;
+    background-color: rgba(48, 11, 11, 0.301);;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    cursor: auto;
+    line-height: 30px;
+}
