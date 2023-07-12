@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <form>
+        <label>Прізвище:</label><br> <input type="text" id="userLastName" onkeyup="checkSend(), checkInput()">
+        <p id="userLastNameMessage">Введіть більше 1 символа</p>
+        <br>
+        <label>Ім’я:</label><br> <input type="text" id="userFirstName" onkeyup="checkSend(), checkInput()">
+        <p id="userFirstNameMessage">Введіть більше 1 символа</p>
+        <br>
+        <label>Вік:</label><br> <input type="text" id="userAge" onkeyup="checkSend(), checkAge()">
+        <p id="userAgeMessage">Вік має бути від 1 до 100</p>
+        <br>
+        <label>Адреса проживання:</label><br> <input type="text" id="userAddress" onkeyup="checkSend(), checkInput()">
+        <p id="userAddressMessage">Введіть більше 1 символа</p>
+        <br>
+        <button id="sendDataByGet" type="button" value="" onclick="sendDataByGetMethod()" disabled>formGet</button>
+        <br>
+        <button id="sendDataByPost" type="button" value="" onclick="sendDataByPostMethod()" disabled>formPost</button>
+    </form>
+    <script src="scripts/task_01.js"></script>
+</body>
+
+</html>
