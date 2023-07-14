@@ -1,53 +1,67 @@
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
-    background: rgb(128,121,255);
-    background: linear-gradient(180deg, rgba(128,121,255,1) 0%, rgba(255,255,255,1) 33%);
+    background: rgb(254, 254, 254);
+    background: linear-gradient(180deg, rgba(254, 254, 254, 1) 0%, rgba(71, 71, 71, 1) 65%);
     background-repeat: no-repeat;
 }
 
-form{
+form {
     margin: 40px;
 }
-form input{
+
+form input {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-form p{
+
+form p {
     color: #ff0000;
     padding-left: 5px;
     display: inline;
     opacity: 0;
     transition-duration: 0.5s;
 }
-.alert{
+
+.alert {
     opacity: 1;
-}
-.correctInput{
-    content: 'Вірно!';
-    color: #006811;
 }
 
 form button {
     height: 50px;
     width: 150px;
     margin-top: 20px;
-    background-color: #0099ff;
+    background: rgb(82, 82, 82);
+    background: linear-gradient(180deg, rgba(82, 82, 82, 1) 0%, rgba(0, 0, 0, 1) 54%);
+    color: white;
+    font-weight: bold;
     border: none;
-    box-shadow: 1px 1px black;
     border-radius: 5px;
-    font-size: 16px;
-    transition-duration: 0.5s;
+    font-size: 18px;
+    opacity: 0.6;
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%);
 }
-form button:hover{
-    background-color: #005a96;
+
+form button:not([disabled]) {
+    cursor: pointer;
+    opacity: 1;
 }
-.error{
+
+form button:not([disabled]):hover {
+    filter: none;
+    text-decoration: underline;
+}
+
+.error {
     background-color: #cc5d5d;
 }
-.noError{
+
+.noError {
     background-color: #7beb8e;
 }

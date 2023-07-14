@@ -46,7 +46,7 @@ function checkAge() {
     let alertMessageElement = document.getElementById('userAgeMessage');
     if (!isNaN(element.value)) {
         alertMessageElement.innerHTML = 'Вік має бути від 1 до 100';
-    } else alertMessageElement.innerHTML = 'Введіть цифри';
+    } else alertMessageElement.innerHTML = 'Введіць числове значення';
     if (element.value.length > 0) {
         if (element.value > 0 && element.value <= 100) {
             element.classList.add('noError');
