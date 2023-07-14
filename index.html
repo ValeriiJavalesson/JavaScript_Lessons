@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <div>
+                <label>Прізвище:</label><br> <input type="text" id="userLastName">
+                <p title="text">Введіть більше 1 символа</p>
+                <br>
+            </div>
+            <div>
+                <label>Ім’я:</label><br> <input type="text" id="userFirstName">
+                <p title="text">Введіть більше 1 символа</p>
+                <br>
+            </div>
+            <div>
+                <label>Вік:</label><br> <input type="text" id="userAge">
+                <p id="ageAlert">Вік має бути від 1 до 100</p>
+                <br>
+            </div>
+            <div>
+                <label>Адреса проживання:</label><br> <input type="text" id="userAddress">
+                <p title="text">Введіть більше 1 символа</p>
+                <br>
+            </div>
+            <button id="sendDataByGet" type="button" value="" disabled>Submit by Get</button>
+            <br>
+            <button id="sendDataByPost" type="button" value="" disabled>Submit by Post</button>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
